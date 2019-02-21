@@ -1,3 +1,5 @@
+/* Look into W3Schools CSS Responsive; CSS Tricks Box Sizing; CSS Tricks FlexBox with Media Query Examples */
+
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
@@ -63,6 +65,7 @@ h3 {
   border-bottom: 2px solid #cccccc;
 }
 
+/*Shannon King should be in a solid color banner across the top */
 #logo {
   float: left;
   width: 250px;
@@ -76,10 +79,11 @@ h3 {
   text-decoration: none;
   background: #4aaaa5;
 }
-
+/* The nav bar should be under Shannon King banner and centered */
 nav {
-  float: right;
+  float: left;
   margin-top: 25px;
+  text-align: center;
 }
 
 nav a {
@@ -215,3 +219,41 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/* Make use of window resizer and browser width to see the browser dimesnsions in Chrome */
+/* media query iphone */
+/* Still needs: resizing of elements in the ff. html files: index, portfolio, contact (such as nav and #logo)*/ 
+@media screen and (max-width: 640px) {
+  .container #main-container { 
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px;
+    clear: both;
+  }
+} 
+/* media query tablet */
+/* Still needs: resizing of elements in the ff. html files: index, portfolio, contact (such as nav and #logo)*/ 
+@media screen (min-width: 640px) and (max-width: 768px) {
+  .container #main-container { 
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    clear: both;
+  }
+  #masthead {
+    position: static;
+  }
+} 
+/* media query desktop */
+/* Still needs: resizing of elements in the ff. html files: index, portfolio, contact (such as nav and #logo)*/ 
+@media screen (min-width: 768px) and (max-width: 980px) {
+  .container #main-container { 
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    clear: both;
+  }
+} 
